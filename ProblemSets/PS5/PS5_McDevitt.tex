@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS5}
+\author{Owen McDevitt}
+\date{February 2019}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item I scraped the "best all-time albums" data on metacritic. I thought it would be interesting to look at critic reviews vs user reviews by genre and release date. I probably won't use the data set in the future, but I definitely found it personally interesting. I used the Web Scraping with R With Selector Gadget example on RPubs to help guide me through the problem. I found that user reviews and critic reviews have a much weaker relationship than I thought they would. However, it may be due to my dataset only including the best albums of all-time, and since inclusion in this group is based on critic reviews, all albums included had a relatively high critic score - 90.38/100. Fan reviews were significantly lower at 82/100 and had a much larger range - 42 vs 15. I suspect that if I included all albums instead of just "best all-time", I would find a stronger relationship.
+    \item For the API data I used the NBA stats API through nbastatR like we did in class. I wanted to see if having large hands really does make someone a worse shooter. Everyone always mentions that when talking about Giannis Antetokounmpo, so I thought it would be a worthy thing to investigate. I downloaded the NBA combine data from 2017. When I ran a regression with just Pct of NBA threes made form the top of the key vs hand size, I found a significant negative relationship. I thought this may be due to taller players being both worse shooters and having larger hands. I ran it again controlling for height and found that the relationship was still significant and negative.
+\end{enumerate}
+
+\end{document}
