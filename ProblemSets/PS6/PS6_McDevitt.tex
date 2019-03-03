@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\title{PS6}
+\author{Owen McDevitt}
+\date{March 2019}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item In order to clean the music data from Meta-critic for PS5 I had to delete the last five entries for the vector of metascores. For some reason when I scrape the top 100 all-time albums it throws in a couple of newly released albums regardless of score. Last week I had to delete the last three entries, and they were all released Feb. 22. Now this week it had 5 extra entries from albums released Mar. 1. Also, I had to delete all of the line breaks and extraneous stuff from the scraped data. I do not know exactly why they all show up, but there was a bunch of $\backslash n \backslash r \backslash t$ in the data. Finally, I made the release dates readable as dates, the scores from characters to numeric, and I multiplied the user scores by 10 to make them directly comparable to critic scores.
+
+    \item
+    The first thing I noticed from the scatterplot below was that the album with the highest score from critics also has the lowest score from users out of the top 100. I looked up the album and it is titled 10 Freedom Summers. It is four and a half hours of Jazz trumpet, and from the user reviews it seems like the biggest complaint is that it is too long. Also, there appears to be a weak exponential relationship between the user scores and critic scores.
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{Plot1.png}
+    \end{center}
+
+    The next plot I looked at was user scores and critic scores vs. release dates. User scores look like they are slightly trending downward. From 2000 to 2005 it looks there was more consensus among critics and users with lots of albums well-received by both groups. This changes as time progresses. Unfortunately, this graph does not say much about the relationship between critic scores and release date since only the top 100 are included. Thus, they all have similarly high scores.
+
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{Plot2.png}
+    \end{center}
+
+    Thus, the final graph is a density plot by release date. Since only the top 100 critic scores are included, the actual scores remain relatively constant overtime (as seen in the previous graph). However, we can gain more information by looking at the density of release dates. This shows us what years had a relatively higher number of top albums according to critics. Thus, it looks like the highest number of critically acclaimed albums come from the mid aughts and the mid twenty-tens.
+
+     \begin{center}
+        \includegraphics[width=0.8\textwidth]{Plot3.png}
+    \end{center}
+
+\end{enumerate}
+
+\end{document}
