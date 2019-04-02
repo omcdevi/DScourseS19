@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS9}
+\author{Owen McDevitt}
+\date{April 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Questions}
+ Lasso: .0553, .2002727, .2335948
+ \\
+ Ridge: .0981,  .1657037, .1578544
+ \\
+ Elastic Net: .0295, .1705486, .175727
+\\
+In a linear regression we are essentially trying to predict a beta that is as close to the true value as possible. In order to do this we use the mean squared error. To test how well it does on new data we use the expected predicted mean squared error. Essentially this error is broken up into bias, variance, and actual irreducible error. The irreducible error cannot be avoided. However, there is a correct spot in between the other two types of error. If we overfit the data then we will have high variance and low bias. If we underfit the data then we will have low variance and high bias. We want to find the optimal point between these two extremes. Lasso and Ridge regressions tune parameters in order to find the optimal value of RMSE.
+\end{document}
