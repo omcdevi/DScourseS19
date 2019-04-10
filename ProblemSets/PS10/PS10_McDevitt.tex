@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS10}
+\author{Owen McDevitt}
+\date{April 2019}
+
+\begin{document}
+
+\maketitle
+
+\section {Optimal Parameters}
+
+logit model: s=0.01, lambda=0.211, alpha=0.874
+\\
+nueral net: size=10, decay=0.157, maxit=1000
+\\
+k-nearest neighbor: k=24
+
+\section {Mean Error}
+
+logit model: 0.2404422
+\\
+naive bayes: 0.009672962
+\\
+nueral net: 0.0428374
+\\
+k-nearest neighbor: 0.02072778
+
+\section{Conclusions}
+
+Out of the models I completed, the naive bayes had the least amount of error. Knn and nueral net also performed really well, but the logit model didn't do so hot (relatively).
+
+\section{Limitations}
+
+The support vector machine took too long. I ran it for about thirty minutes before giving up and continuing with the rest of the problem set. Also, for some reason the tree model kept having problems with the minsplit tuning, and I couldn't figure out why. Thus, I do not have the performance of either of those models in my answers. Also, sorry I turned in the problem set a day late. It took longer than I initially anticipated.
+
+
+\end{document}
