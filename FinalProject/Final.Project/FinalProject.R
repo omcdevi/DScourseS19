@@ -13,7 +13,7 @@ library(mlbench)
 
 set.seed(12345)
 
-selection.1 <- function(N=1000){
+selection <- function(N=1000){
     X <- rnorm(N)
     Z <- rnorm(N)
     err <- rmvnorm(N,mean=c(0,0),sigma=cbind(c(.5,.7),c(.7,1)))
